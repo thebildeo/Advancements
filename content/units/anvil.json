@@ -1,0 +1,137 @@
+{
+"name": "Anvil",
+"research": {
+"parent": "reign",
+"requirements": [
+"graphite/1220",
+"surge-alloy/1000",
+"plastanium/940",
+"phase-fabric/850",
+"copper/1240",
+"lead/1240",
+"silicon/1300"
+]
+},
+"type": "mech",
+"lightRadius": 200,
+"armor": 35,
+"rotateSpeed": 1.4,
+"canDrown": false,
+"hitSize": 40,
+"mechFrontSway": 1,
+"mechSideSway": 1,
+"commandLimit": 8,
+"mechStepParticles": true,
+"mechStepShake": 2,
+"singleTarget": true,
+"speed": 0.30,
+"health": 78600,
+"range": 250,
+"immunities": [
+		"melting",
+		"blasted",
+		"burning",
+		"slow"
+		],
+"weapons": [
+  {
+  "name": "anvil-weapon",
+  "x": 27.5,
+  "y": 3,
+  "reload": 50,
+  "alternate": true,
+  "top": false,
+  "rotate": false,
+  "recoil": 3,
+  "layerOffset": -1,
+  "shootY": 27,
+  "shots": 3,
+  "shake": 2,
+  "spacing": 10,
+  "shootSound": "shotgun",
+  "ejectEffect": "none",
+    "bullet": {    
+    "type": "BasicBulletType",
+    "sprite" : "missile-large",
+    "damage": 200,	
+    "height": 19,
+    "width": 12,			
+    "speed": 8,
+    "splashDamageRadius": 30,
+	"splashDamage": 40,
+    "lifetime": 60,
+    "homingPower": 0.5,
+    "homingDelay": 20,
+    "homingRange": 160,
+    "shrinkX": 0,
+    "shrinkY": 0,
+    "hitEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "particles": 20,
+    "length": 60,
+    "lifetime": 66,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "cone": 360,
+    "colorFrom": "FF875BFF",
+    "colorTo": "FF875B15",
+    "sizeFrom": 7,
+    "sizeTo": 0
+    },
+    {
+    "type": "WaveEffect",
+    "lifetime": 25,
+    "sizeFrom": 0,
+    "sizeTo": 50,
+    "strokeFrom": 6,
+    "strokeTo": 0,
+    "colorFrom": "FF875BFF",
+    "colorTo": "FF875BF10"
+    }
+    ]
+    },
+    "shootEffect": "none",
+    "trailLength": 10,
+    "trailWidth": 3.5,
+    "absorbable": false
+	}
+  },
+  {
+    "name": "tyrant-gunner",
+    "shootCone": 15,
+    "mirror": true,
+    "alternate": true,
+    "rotateSpeed": 3,
+    "rotate": true,
+    "shootY": 8,
+    "x": 16,
+    "y": -3.5,
+    "reload": 30,
+    "recoil": 3,
+    "ejectEffect": "casing2",
+    "shootSound": "shootBig",
+    "shots": 3,
+    "shake": 1,
+    "shotDelay": 4,
+    "bullet": { 
+    "knockback": 1,
+    "lightning": 4,
+    "lightningDamage": 10,
+    "lightningLength": 3,
+    "lightningLengthRand": 6,
+    "type": "basicBulletType",
+    "hitEffect": "blastExplosion",
+    "shootEffect": "shootBig2",
+    "despawnEffect": "blastExplosion",
+    "lifetime": 70,
+    "damage": 80,
+    "speed": 4,
+    "width": 10,
+    "height": 8
+   }
+  }
+ ]
+}
