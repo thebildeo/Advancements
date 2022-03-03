@@ -16,7 +16,7 @@
 		{ "item": "thorium", "amount": 500 },
 		{ "item": "silicon", "amount": 690 },
 		{ "item": "phase-fabric", "amount": 670 },
-		{ "item": "osmium", "amount": 780 },
+		{ "item": "titanium", "amount": 780 },
 		{ "item": "plastanium", "amount": 600 }
 ],
 "category": "power",
