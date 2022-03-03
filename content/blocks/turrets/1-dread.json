@@ -248,7 +248,7 @@
     },
     "status": "blasted"
     },
-    "osmium": {
+    "metaglass": {
     "sprite": "advancements-gauss-bullet",
     "speed": 8,
     "height": 42,
