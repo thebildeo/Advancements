@@ -64,7 +64,7 @@
     "repairSpeed": 25,
 	"bullet": {
 	"maxRange": 500,
-	"speed": 300,
+	"speed": 50,
 	"shootEffect": "hitEmpSpark"
     }
     },
@@ -87,7 +87,7 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 300,
+	"speed": 50,
 	"maxRange": 300
 	}
     },
@@ -110,7 +110,7 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 300,
+	"speed": 50,
 	"maxRange": 500
     }
     },
@@ -133,7 +133,7 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 500,
+	"speed": 50,
 	"maxRange": 500
     }
     },
@@ -156,7 +156,7 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 300,
+	"speed": 50,
 	"maxRange": 500
     }
     }
