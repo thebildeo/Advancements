@@ -19,7 +19,7 @@
 			]
 	},
 		"liquid": {
-			"liquid": "osmilium-liquid",
+			"liquid": "cryofluid",
 			"amount": 0.2
 		}
 	},
