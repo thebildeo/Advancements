@@ -4,6 +4,5 @@
     "author": "AureusStratus",
     "description":"A mod that expands apon vanilla",
     "minGameVersion": "136",
-    "version": "1.0",
-    "dependencies": ["exogenesis"]
+    "version": "1.0"
 }
