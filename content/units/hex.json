@@ -1,6 +1,7 @@
 {
     "controller": "DefenderAI",
     "type": "payload",
+       "rotateShooting": false,
     "drawShields": false,
     "fallSpeed": 0.006,
     "research": {
@@ -36,7 +37,6 @@
     "engineOffset": 50,
     "engineSize": 7.5,
     "targetAir": true,
-    "commandLimit": 10,
     "immunities": [
 		"sapped",
 		"wet",
@@ -63,8 +63,8 @@
     "pulseStroke": 2,
     "repairSpeed": 25,
 	"bullet": {
-	"maxRange": 500,
-	"speed": 50,
+	"maxRange": 300,
+	"speed": 5,
 	"shootEffect": "hitEmpSpark"
     }
     },
@@ -87,8 +87,8 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 50,
-	"maxRange": 300
+	"speed": 5,
+	"maxRange": 100
 	}
     },
     {
@@ -110,8 +110,8 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 50,
-	"maxRange": 500
+	"speed": 5,
+	"maxRange": 300
     }
     },
     {
@@ -133,8 +133,8 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 50,
-	"maxRange": 500
+	"speed": 5,
+	"maxRange": 300
     }
     },
     {
@@ -156,8 +156,8 @@
     "repairSpeed": 3,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"speed": 50,
-	"maxRange": 500
+	"speed": 5,
+	"maxRange": 300
     }
     }
     ],

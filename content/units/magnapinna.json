@@ -19,7 +19,6 @@
     "boostMultiplier": 1.0,
     "engineOffset": 51,
     "engineSize": 9,
-    "commandLimit": 8,
     "lowAltitude": true,
     "targetAir": true,
     "range": 300,
@@ -47,7 +46,7 @@
     "shootY": 1,
     "inaccuracy": 10,
     "reload": 237,
-    "recoil": 4,
+    "recoil": 3,
     "shake": 1,
     "shootCone": 20,
     "shootSound": "beam",
@@ -77,22 +76,24 @@
     "y": -15,
     "x": 0,
     "top": true,
-    "shots": 1,
     "shootY": 0,
     "rotate": false,
     "flipSprite": true,
     "reload": 367,
     "recoil": 0,
+      "shoot": {
     "firstShotDelay": 80,
+    },
     "shootStatusDuration": "100",
     "shootStatus": "unmoving",
     "ignoreRotation": true,
-    "chargeSound": "lasercharge",
+
     "ejectEffect": "none",
     "shootSound": "laserblast",
     "bullet": { 
     "type": "EmpBulletType",
     "shootEffect": "greenLaserCharge",
+        "chargeSound": "lasercharge",
     "despawnEffect": {
     "type": "multiEffect",
     "effects": [
@@ -209,7 +210,7 @@
     "repairSpeed": 7.75,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"maxRange": 260
+	"maxRange": 60
 	}
     },
     {
@@ -228,7 +229,7 @@
     "bullet": {
     "hitEffect": "pointHit",
     "smokeEffect": "pointHit",
-    "maxRange": 350,
+    "maxRange": 100,
     "damage": 40
     }
     },
@@ -254,7 +255,7 @@
     "repairSpeed": 7.75,
 	"bullet": {
 	"shootEffect": "hitEmpSpark",
-	"maxRange": 260
+	"maxRange": 60
     }
     }
     ],

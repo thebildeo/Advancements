@@ -23,7 +23,7 @@
 	"health": 97000,
 	"armor": 35,
 	"drag": 0.2,
-	"drownTimeMultiplier": 30,
+	"drownTimeMultiplier": 7,
 	"flying": false,
 	"targetAir": true,
    	"rotateSpeed": 1.4,
@@ -32,7 +32,7 @@
     "legLength": 39,
     "legBaseOffset": 15,
     "legTrns": 0.6,
-    "landShake": 3,
+    "landShake": 1,
     "legSpeed": 0.17,
     "rippleScale": 10.5,
     "legSplashDamage": 200,
@@ -56,8 +56,11 @@
   "alternate": true,
   "top": true,
   "rotate": true,
+   "shoot": {
+  "type": "shootPattern",
   "shots": 3,
   "shotDelay": 3,
+   },
   "layerOffset": 1,
   "rotateSpeed": 2,
   "inaccuracy": 7,
@@ -109,7 +112,7 @@
     "effects": [
     {
     "type": "ParticleEffect",
-    "particles": 9,
+    "particles": 5,
     "sizeFrom": 7,
     "sizeTo": 1,
     "length": 160,
@@ -123,7 +126,7 @@
     },
     {    
     "type": "ParticleEffect",
-    "particles": 14,
+    "particles": 6,
     "sizeFrom": 4,
     "sizeTo": 1,
     "length": 130,
@@ -137,7 +140,7 @@
     },
     {    
     "type": "ParticleEffect",
-    "particles": 10,
+    "particles": 5,
     "sizeFrom": 6,
     "sizeTo": 1,
     "length": 150,
@@ -151,7 +154,7 @@
     },
     {
     "type": "ParticleEffect",
-    "particles": 10,
+    "particles": 5,
     "sizeFrom": 5,
     "sizeTo": 1,
     "length": 180,
@@ -171,7 +174,7 @@
     "effects": [
     {
     "type": "ParticleEffect",
-    "particles": 7,
+    "particles": 3,
     "sizeFrom": 7,
     "sizeTo": 1,
     "length": 200,
@@ -185,7 +188,7 @@
     },
     {
     "type": "ParticleEffect",
-    "particles": 7,
+    "particles": 3,
     "sizeFrom": 9,
     "sizeTo": 3,
     "length": 200,
@@ -193,13 +196,13 @@
     "lightOpacity": 0,
     "interp": "circleOut",
     "sizeInterp": "pow5In",
-    "colorFrom": "565656FF",
+    "colorFrom": "72DB8FFF",
     "colorTo": "56565610",
     "cone": 16
     },
     {
     "type": "ParticleEffect",
-    "particles": 10,
+    "particles": 3,
     "sizeFrom": 5,
     "sizeTo": 1,
     "length": 190,
@@ -207,7 +210,7 @@
     "lightOpacity": 0,
     "interp": "circleOut",
     "sizeInterp": "pow5In",
-    "colorFrom": "84F491FF",
+    "colorFrom": "72DB8FFF",
     "colorTo": "565656FF",
     "cone": 10
     }
@@ -228,7 +231,7 @@
     "y": 10,
     "rotate": true,
     "rotateSpeed": 3.5,
-    "reload": 10,
+    "reload": 5,
     "recoil": 0.5,
     "shots": 2,
     "shootY": 0,

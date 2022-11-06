@@ -34,7 +34,6 @@
         
         "engineSize": 12,
         "targetAir": true,
-        "commandLimit": 8,
         "immunities": [
 		"blasted",
 		"wet",
@@ -87,8 +86,11 @@
 "despawnEffect": "flakExplosion",
 "lifetime": 90,
 "damage": 90,
+"trailParam": 5,
+"trailLength": 13,
+"trailWidth": 1.5,
 "speed": 5,
-"width": 10,
+"width": 6,
 "height": 10   
 }
 },
@@ -99,15 +101,18 @@
 "alternate": true,
 "y": 5,
 "x": 22,
-"shots": 3,
 "rotate": true,
 "rotateSpeed": 4,
 "inaccuracy": 5,
 "shootY": 10,
 "reload": 16,
+   "shoot": {
+    "type": "shootPattern",
+    "shots": 3,
+    "shotDelay": 5,
+},
 "recoil": 1,
 "shake": 0.5,
-"shotDelay": 5,
 "ejectEffect": "casing2",
 "shootSound": "shootBig",
 "bullet": { 
@@ -124,7 +129,10 @@
 "lifetime": 90,
 "damage": 200,
 "speed": 5,
-"width": 16,
+    "trailParam": 5,
+    "trailLength": 13,
+"trailWidth": 2.5,
+"width": 10,
 "height": 16,
 "splashDamage": 20,
 "splashDamageRadius": 20
@@ -137,15 +145,18 @@
 "alternate": true,
 "y": -12,
 "x": 28,
-"shots": 3,
 "rotate": true,
 "rotateSpeed": 4,
 "inaccuracy": 5,
 "shootY": 10,
 "reload": 16,
+   "shoot": {
+    "type": "shootPattern",
+    "shots": 3,
+    "shotDelay": 5,
+},
 "recoil": 1,
 "shake": 0.5,
-"shotDelay": 5,
 "ejectEffect": "casing2",
 "shootSound": "shootBig",
 "bullet": { 
@@ -162,7 +173,10 @@
 "lifetime": 90,
 "damage": 200,
 "speed": 5,
-"width": 16,
+    "trailParam": 5,
+    "trailLength": 13,
+"trailWidth": 2.5,
+"width": 10,
 "height": 16,
 "splashDamage": 20,
 "splashDamageRadius": 20
@@ -180,15 +194,19 @@
 "rotateSpeed": 2.9,
 "reload": 15,
 "recoil": 0.5,
-"shots": 2,
 "shootY": 8,
 "inaccuracy": 10,
 "xRand": 11,
-"shotDelay": 1,
+   "shoot": {
+    "type": "shootPattern",
+    "shots": 2,
+    "shotDelay": 2,
+    },
 "shootSound": "missile",
 "velocityRnd": 0.4,
 "bullet": {
 "keepVelocity": false,
+ "sprite" : "missile-large",
 "type": "MissileBulletType",
 "hitEffect": "explosion",
 "despawnEffect": "explosion",
@@ -203,8 +221,8 @@
 "trailWidth": 2.5,
 "weaveScale": 5,			
 "weaveMag": 5,
-"height": 19,
-"width": 12,
+"height": 22,
+"width": 8,
 "splashDamageRadius": 50,
 "splashDamage": 78
 }
@@ -226,9 +244,11 @@
   "ejectEffect": "none",
   "shootStatus": "unmoving",
   "shootStatusDuration": 120,
-  "firstShotDelay": 120,
+      "shoot": {
+   "firstShotDelay": 120,
+    },
   "bullet": { 
-    "shootEffect": {
+    "chargeEffect": {
     "type": "multiEffect",
     "lifetime": 120,
     "followParent": true,
@@ -520,96 +540,6 @@
       "reload" : 540,
       "duration" : 245,
       "effect": "overclock"
-        },
-        {
-      "type": "mindustry.entities.abilities.StatusFieldAbility",
-      "range" : 1,
-      "parentizeEffects": true,
-    "activeEffect": {
-      "type": "multiEffect",
-      "layer": 88,
-      "followParent": true,
-      "rotWithParent": true,
-      "effects": [
-      {
-      "type": "ParticleEffect",
-      "lifetime": 10,
-      "length": 0,
-      "sizeFrom": 95,
-      "sizeTo": 95,
-      "particles": 1,
-      "region": "exogenesis-nadir-bottom",
-      "colorFrom": "FFFFFFF",
-      "colorTo": "FFFFFFF"
-      }
-      ]
-      },
-      "reload" : 5,
-      "duration" : 1,
-      "effect": "none"
-        },
-        {
-      "type": "mindustry.entities.abilities.StatusFieldAbility",
-      "effect": "none",
-      "parentizeEffects": true,
-      "activeEffect": {
-      "type": "multiEffect",
-      "followParent": true,
-      "rotWithParent": true,
-      "effects": [
-      {
-      "type": "ParticleEffect",
-      "lifetime": 315,
-      "length": 0,
-      "sizeFrom": 14,
-      "sizeTo": 14,
-      "spin": 8,
-      "particles": 1,
-      "region": "impact-reactor-plasma-3",
-      "colorFrom": "ff9c5a",
-      "colorTo": "ff9c5a"
-      },
-      {
-      "type": "ParticleEffect",
-      "lifetime": 315,
-      "length": 0,
-      "sizeFrom": 15,
-      "sizeTo": 15,
-      "spin": 8,
-      "particles": 1,
-      "region": "impact-reactor-plasma-2",
-      "colorFrom": "ec7458aa",
-      "colorTo": "ec7458aa"
-      },
-      {
-      "type": "ParticleEffect",
-      "lifetime": 315,
-      "length": 0,
-      "sizeFrom": 16,
-      "sizeTo": 16,
-      "spin": 10,
-      "particles": 1,
-      "region": "impact-reactor-plasma-1",
-      "colorFrom": "ec7458aa",
-      "colorTo": "ec7458aa"
-      },
-      {
-      "type": "ParticleEffect",
-      "lifetime": 315,
-      "length": 0,
-      "sizeFrom": 16,
-      "sizeTo": 16,
-      "spin": 12,
-      "particles": 1,
-      "region": "impact-reactor-plasma-0",
-      "colorFrom": "ec745855",
-      "colorTo": "ec745855"
-      }
-      ]
-      },
-      "range" : 1,
-      "reload" : 300,
-      "duration" : 1
       }
    ]
 }
